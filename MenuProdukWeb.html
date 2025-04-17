@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Produk</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(120deg, #f4f4f4, #e4e4e4);
+      color: #333;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #007bff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Product Grid Styles */
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      list-style: none;
+      padding: 0;
+    }
+
+    .product-item {
+      background: linear-gradient(145deg, #ffffff, #f0f0f0);
+      border-radius: 15px;
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), -8px -8px 16px rgba(255, 255, 255, 0.8);
+    }
+
+    .product-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .product-price {
+      font-size: 1.2rem;
+      color: #28a745;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .product-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: linear-gradient(145deg, #007bff, #0056b3);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 25px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.7);
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .product-button:hover {
+      background: linear-gradient(145deg, #0056b3, #003d7a);
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <h1>Daftar Produk Website</h1>
+  <ul class="product-list">
+    <li class="product-item">
+      <img src="Produk.jpg" alt="Produk 1" class="product-image">
+      <h2 class="product-title">Produk 1</h2>
+      <h2 class="product-title">JASA PROGRAMER WEBSITE TAPI ENGGA FULL STACK</h2>
+       <h2 class="product-title">JASA DEVELOPER SAMP 20DAYS</h2>
+      <p class="product-price">Rp 100.000</p>
+      <a href="index.html" class="product-button">Beli Sekarang</a>
+    </li>
+    <li class="product-item">
+      <img src="Produk.jpg"alt="Produk 2" class="product-image">
+      <h2 class="product-title">Produk 2</h2>
+      <h2 class="product-title">JASA PROGRAMER WEBSITE SETANGAH STACK</h2>
+         <h2 class="product-title">JASA DEVELOPER SAMP 25DAYS </h2>
+      <p class="product-price">Rp 150.000</p>
+      <a href="index.html" class="product-button">Beli Sekarang</a>
+    </li>
+    <li class="product-item">
+      <img src="Produk.jpg" alt="Produk 3" class="product-image">
+      <h2 class="product-title">Produk 3</h2>
+      <h2 class="product-title">JASA PROGRAMER WEBSITE FULL STACK</h2>
+         <h2 class="product-title">JASA DEVELOPER SAMP 31DAYS</h2>
+      <p class="product-price">Rp 200.000</p>
+      <a href="index.html" class="product-button">Beli Sekarang</a>
+    </li>
+  </ul>
+</body>
+</html>
