@@ -1,0 +1,74 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+        }
+        .payment-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+        .payment-container h2 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .payment-method button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .ovo {
+            background-color: #6a1b9a;
+        }
+        .ovo:hover {
+            background-color: #8e24aa;
+        }
+        .dana {
+            background-color: #007bff;
+        }
+        .dana:hover {
+            background-color: #0056b3;
+        }
+        .qris {
+            background-color: #ff5722;
+        }
+        .qris:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Pilih Metode Pembayaran</h2>
+        <div class="payment-method">
+            <button class="ovo">OVO</button>
+             <a href="dana.html" class="btn">DANA</a>
+            <button class="qris">QRIS</button>
+        </div>
+    </div>
+</body>
+</html>
