@@ -1,0 +1,124 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Sosial Media</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            font-family: 'Inter', sans-serif;
+            color: #ffffff;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }.container {
+        background-color: #ffffff;
+        color: #1a202c;
+        border-radius: 1rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 100%;
+        max-width: 28rem;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 1.875rem;
+        font-weight: 800;
+        color: #5a67d8;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.875rem;
+        color: #4a5568;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.875rem;
+        color: #4a5568;
+        background-color: #f7fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+        transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.3);
+    }
+
+    .submit-button {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #ffffff;
+        background-color: #5a67d8;
+        border: none;
+        border-radius: 0.5rem;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+    .submit-button:hover {
+        background-color: #4c51bf;
+    }
+
+    .submit-button:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.5);
+    }
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Layanan Sosial Media</h1><form>
+        <!-- Pilihan Layanan -->
+        <div class="form-group">
+            <label for="service">Pilih Layanan</label>
+            <select id="service" name="service">
+                <option value="follower">Suntik Follower</option>
+                <option value="recovery">Memulihkan Akun</option>
+                <option value="boost">Boost Engagement</option>
+            </select>
+        </div>
+
+        <!-- Input Username/Link Akun -->
+        <div class="form-group">
+            <label for="username">Username atau Link Akun</label>
+            <input type="text" id="username" name="username" placeholder="Masukkan username atau link akun">
+        </div>
+
+        <!-- Input Tambahan Info -->
+        <div class="form-group">
+            <label for="details">Detail Tambahan</label>
+            <textarea id="details" name="details" rows="4" placeholder="Masukkan informasi tambahan..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-button">Kirim Permintaan</button>
+    </form>
+</div>
+
+</body>
+</html>
